@@ -5,7 +5,6 @@ formulario.addEventListener('submit', function(event) {
   const campoB = parseInt(document.getElementById('campoB').value);
   
   if (campoB <= campoA) {
-    event.preventDefault(); // Impede a submissão do formulário
     mensagemDiv.textContent = 'O número B deve ser maior que o número A!';
     mensagemDiv.style.color = 'red';
   } else {
